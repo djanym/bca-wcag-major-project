@@ -1,0 +1,16 @@
+# ignore everything in the root except the "wp-content" directory.
+.idea
+node_modules/
+!docker
+!docker-compose.yml
+!.gitignore
+!.editorconfig
+!readme.md
+.DS_Store
+env_prod
+config.php
+/app/templates/cache/
+~*
+
+/public/assets/css/
+/public/assets/js/
