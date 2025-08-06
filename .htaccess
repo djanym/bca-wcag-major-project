@@ -1,0 +1,35 @@
+# Enable URL rewriting
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /_sandbox/bca-major-project/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /_sandbox/bca-major-project/index.php [L]
+
+# Block access to sensitive files
+RewriteRule ^(.*\.(htaccess|ini|log|sh|bak|sql))$ - [F,L]
+# Block access to sensitive directories
+RedirectMatch 403 ^/(\.git|\.env|vendor).*$
+
+# Block PHP files from specific directories
+RewriteRule ^(assets|includes|templates)/.+\.php$ - [F,L]
+
+# Add security headers
+Header set X-Content-Type-Options "nosniff"
+Header set X-Frame-Options "SAMEORIGIN"
+Header set X-XSS-Protection "1; mode=block"
+
+# Main URL rewrite rule
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)/?$ $1.php [QSA,L]
+
+# Prevent directory listing
+Options -Indexes
+
+# Protect .htaccess file
+<Files .htaccess>
+    Order Allow,Deny
+    Deny from all
+</Files>
