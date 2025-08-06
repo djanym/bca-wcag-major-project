@@ -10,7 +10,7 @@
 
 <body>
 <header>
-    <nav class="nav">
+    <nav class="nav" id="sticky_bar">
         <a href="<?php echo SITE_URL; ?>/home">Home</a>
         <a href="<?php echo SITE_URL; ?>/services">Services</a>
         <a href="<?php echo SITE_URL; ?>/contact">Contact Us</a>

@@ -32,7 +32,7 @@ require __DIR__ . '/header.php';
         <section class="white-box">
             <div class="site-container">
                 <div class="content-column">
-                    <h4>Our Location</h4>
+                    <h2>Our Location</h2>
                     <p>ZZL Precast Concrete</p>
                     <p>Pervomaisk 13a, Floreni, MD 2031</p>
                     <p>Phone: <a href="#" style="color: #777;">022-755-2515</a></p>
@@ -44,10 +44,13 @@ require __DIR__ . '/header.php';
                     <p>Sunday: Closed</p>
                 </div>
                 <div class="content-column text-center">
-                    <h3>Send Us a Message</h3>
+                    <h2>Send Us a Message</h2>
                     <div class="contact-form-container">
-                        <?php require __DIR__ . '/form.php'; ?>
+                        <?php
+                        require __DIR__ . '/form.php'; ?>
                     </div>
+                    <?php
+                    require __DIR__ . '/form.php'; ?>
                 </div>
             </div>
         </section>
