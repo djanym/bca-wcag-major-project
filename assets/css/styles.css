@@ -100,7 +100,7 @@ header.scrolled {
 }
 
 header.scrolled .nav a {
-    color: #333;
+    color: #888;
 }
 
 /* Cover Section */
@@ -223,6 +223,10 @@ header.scrolled .nav a {
     width: 100%;
 }
 
+.content-centered {
+    justify-content: center;
+}
+
 /* Footer Styles */
 .site-footer {
     background-color: #222;
@@ -319,10 +323,12 @@ address {
 }
 
 /* Form Styles */
-.contact-form {
+.form-container {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    width: 50%;
+    min-width: 500px;
 }
 
 .form-group {
@@ -337,10 +343,10 @@ label {
 
 input, textarea {
     padding: 0.8rem;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    background-color: rgba(255, 255, 255, 0.05);
-    border-radius: 4px;
-    color: #fff;
+    border: 1px solid #888888;
+    background-color: #cccccc;
+    border-radius: 5px;
+    color: #888888;
     font-family: inherit;
     transition: border-color 0.3s ease;
 }

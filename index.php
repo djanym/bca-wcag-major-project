@@ -1,9 +1,11 @@
 <?php
 require __DIR__ . '/functions.php';
 
-const SITE_URL      = 'https://localhost/_sandbox/bca-major-project/';
-const TEMPLATE_DIR  = __DIR__ . '/templates/';
-const ALLOWED_PAGES = [ 'home', 'services', 'contact' ];
+const SITE_BASE_URL      = 'https://localhost';
+const SITE_URL_SUBFOLDER = '_sandbox/bca-major-project';
+const SITE_URL           = SITE_BASE_URL . '/' . SITE_URL_SUBFOLDER;
+const TEMPLATE_DIR       = __DIR__ . '/templates/';
+const ALLOWED_PAGES      = [ 'home', 'services', 'contact' ];
 
 $page_slug = get_requested_page_slug();
 

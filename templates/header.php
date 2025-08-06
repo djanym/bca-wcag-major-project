@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Precast Concrete Products Supplier - ZZL Company</title>
+    <title><?php echo htmlspecialchars( get_page_title() ); ?></title>
     <link rel="stylesheet" href="<?php echo SITE_URL; ?>/assets/css/styles.css" type="text/css">
     <script src="<?php echo SITE_URL; ?>/assets/js/main.js"></script>
 </head>
