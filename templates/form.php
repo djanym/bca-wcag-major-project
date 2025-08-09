@@ -34,10 +34,10 @@ echo SITE_URL; ?>/contact/?success=1" method="post">
         </fieldset>
 
         <div class="form-group">
-                                <textarea id="your-message" name="message" placeholder="Your Message" rows="3"
-                                          required></textarea>
+            <textarea id="your-message" name="message" placeholder="Your Message" rows="3"
+                      required></textarea>
         </div>
 
-        <button type="submit" class="btn">Send</button>
+        <button type="submit" class="submit" tabindex="1">&nbsp;</button>
     </div>
 </form>

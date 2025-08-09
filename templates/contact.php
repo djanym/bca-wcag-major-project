@@ -17,7 +17,7 @@ require __DIR__ . '/header.php';
     </div>
 
     <main class="main-content" id="content" role="banner" aria-required="true" aria-checked="mixed">
-        <section class="white-box">
+        <div class="white-box">
             <div class="site-container">
                 <div class="content-column">
                     <h3>Contact ZZL Precast Concrete</h3>
@@ -27,9 +27,9 @@ require __DIR__ . '/header.php';
                         custom project, our team is ready to help you find the perfect solution for your needs.</p>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section class="white-box">
+        <div class="white-box">
             <div class="site-container">
                 <div class="content-column">
                     <h2>Our Location</h2>
@@ -38,22 +38,18 @@ require __DIR__ . '/header.php';
                     <p>Phone: <a href="#" style="color: #777;">022-755-2515</a></p>
                     <p>Email: <a href="#" style="color: #777;">sales@example.com</a></p>
 
-                    <h5>Business Hours</h5>
+                    <h3>Business Hours</h3>
                     <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
                     <p>Saturday: 9:00 AM - 2:00 PM</p>
                     <p>Sunday: Closed</p>
                 </div>
                 <div class="content-column text-center">
                     <h2>Send Us a Message</h2>
-                    <div class="contact-form-container">
-                        <?php
-                        require __DIR__ . '/form.php'; ?>
-                    </div>
                     <?php
                     require __DIR__ . '/form.php'; ?>
                 </div>
             </div>
-        </section>
+        </div>
     </main>
 
 <?php

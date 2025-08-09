@@ -17,7 +17,7 @@ require __DIR__ . '/header.php';
     </div>
 
     <main class="main-content" id="content">
-        <section class="gray-box">
+        <div class="gray-box">
             <div class="site-container">
                 <div class="content-column">
                     <h1>Comprehensive Precast Concrete Services</h1>
@@ -31,9 +31,9 @@ require __DIR__ . '/header.php';
                     echo SITE_URL; ?>/assets/img/highlights-01.jpg" width="600" height="300">
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section class="white-box">
+        <div class="white-box">
             <div class="site-container">
                 <div class="content">
                     <h2>Our Core Services</h2>
@@ -53,9 +53,9 @@ require __DIR__ . '/header.php';
                     </p>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section class="gray-box" id="septic">
+        <div class="gray-box" id="septic">
             <div class="site-container">
                 <div class="content-column">
                     <h2>Septic System Design &amp; Installation</h2>
@@ -74,9 +74,9 @@ require __DIR__ . '/header.php';
                     echo SITE_URL; ?>/assets/img/highlights-01.jpg" width="400" height="300">
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section class="white-box" id="retaining">
+        <div class="white-box" id="retaining">
             <div class="site-container">
                 <div class="content-column text-center">
                     <img src="<?php
@@ -95,9 +95,9 @@ require __DIR__ . '/header.php';
                     </ul>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section class="gray-box" id="stormwater">
+        <div class="gray-box" id="stormwater">
             <div class="site-container">
                 <div class="content-column">
                     <h2>Stormwater Management Structures</h2>
@@ -116,9 +116,9 @@ require __DIR__ . '/header.php';
                     echo SITE_URL; ?>/assets/img/highlights-03.jpg" width="400" height="300">
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section class="white-box" id="utility">
+        <div class="white-box" id="utility">
             <div class="site-container">
                 <div class="content-column text-center">
                     <img src="<?php
@@ -137,9 +137,9 @@ require __DIR__ . '/header.php';
                     </ul>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section class="gray-box" id="quote-form">
+        <div class="gray-box" id="quote-form">
             <div class="site-container content-centered">
                 <div>
                     <h2>Request a Quote</h2>
@@ -147,7 +147,7 @@ require __DIR__ . '/header.php';
                     require __DIR__ . '/form.php'; ?>
                 </div>
             </div>
-        </section>
+        </div>
     </main>
 
 <?php

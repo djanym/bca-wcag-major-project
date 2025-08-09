@@ -21,10 +21,16 @@
             <div class="footer-column">
                 <h3 class="section-heading">Follow us</h3>
                 <ul class="social-links">
-                    <li><a href="https://www.facebook.com/zzl/">Facebook</a></li>
-                    <li><a href="https://twitter.com/zzlprecast">Twitter</a></li>
-                    <li><a href="https://www.instagram.com/zzlprecast/">Instagram</a></li>
-                    <li><a href="https://www.youtube.com/c/zzlprecast">Youtube</a></li>
+                    <li>
+                        <a href="https://www.facebook.com/zzl/" title="Facebook">
+                            <img src="<?php echo SITE_URL; ?>/assets/img/facebook.svg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/zzlprecast/">
+                            <img src="<?php echo SITE_URL; ?>/assets/img/instagram.svg">
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
