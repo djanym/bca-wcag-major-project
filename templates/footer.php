@@ -27,7 +27,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.instagram.com/zzlprecast/">
+                        <a href="https://www.instagram.com/zzlprecast/" title="Instagram">
                             <img src="<?php echo SITE_URL; ?>/assets/img/instagram.svg">
                         </a>
                     </li>

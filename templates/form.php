@@ -13,7 +13,7 @@ echo SITE_URL; ?>/contact/?success=1" method="post">
             <input type="tel" id="phone" name="phone" placeholder="Your Phone" required>
         </div>
 
-        <fieldset>
+        <fieldset class="radio-group-container">
             <legend>City</legend>
             <div class="radio-group">
                 <input type="radio" id="nh" name="city" value="Chișinau" checked>
