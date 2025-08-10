@@ -23,6 +23,11 @@
     --color-input-border: #888888;
     --color-input-placeholder: #888888;
     --color-input-focus: #ff6b00;
+    --spacing-paragraph-line-height: 1.5;
+    --spacing-paragraph-margin-bottom: 2rem;
+    --spacing-heading-line-height: 1.3;
+    --spacing-heading-margin-bottom: 1rem;
+    --content-measure: 70ch;
 }
 
 /* Reset and Base Styles */
@@ -34,7 +39,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.1;
+    line-height: var(--spacing-paragraph-line-height);
     color: var(--color-text);
 }
 
@@ -47,33 +52,51 @@ a:hover {
     color: var(--color-link-hover);
 }
 
-img {
+img, svg, video, canvas {
     max-width: 100%;
     height: auto;
+}
+
+img {
     border-radius: 6px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2, h3, h4, h5 {
-    margin-bottom: 1rem;
-    line-height: 1.1;
+h1, h2, h3, h4, h5, h6 {
+    line-height: var(--spacing-heading-line-height);
+    margin-bottom: var(--spacing-heading-margin-bottom);
     color: var(--color-heading);
+    max-width: calc(var(--content-measure) + 10ch);
 }
 
 h1 {
-    font-size: 2.2rem;
+    font-size: 2.25rem;
 }
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 2.0rem;
 }
 
 h3 {
-    font-size: 1.4rem;
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
 }
 
 p {
-    margin-bottom: 1.2rem;
+    font-size: 1rem;
+    line-height: var(--spacing-paragraph-line-height);
+    margin-bottom: var(--spacing-paragraph-margin-bottom);
 }
 
 ul {
@@ -84,6 +107,16 @@ ul {
 li {
     margin-bottom: 0.5rem;
 }
+
+p, li, address, td, th {
+    text-align: left;
+    text-justify: auto;
+}
+
+p, li, dd, figcaption, blockquote {
+    max-width: var(--content-measure);
+}
+
 
 /* Header and Navigation */
 header {
