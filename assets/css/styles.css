@@ -1,3 +1,30 @@
+:root {
+    --color-footer-bg: #222;
+    --color-text: #444444;
+    --color-section-1-bg: #ffffff;
+    --color-section-2-bg: #eeeeee;
+    --color-heading: #555555;
+    --color-link: #0000ff;
+    --color-link-hover: #ff0000;
+    --color-link-footer: #eeaa55;
+    --color-nav-link: #dddddd;
+    --color-nav-link-border: #ff6b00;
+    --color-button-bg: #920000;
+    --color-button-text: #ffffff;
+    --color-button-border: #ab0000;
+    --color-button-bg-hover: #ffeeab;
+    --color-button-text-hover: #222222;
+    --color-button-border-hover: #222222;
+    --color-text-light: #ffffff;
+    --color-text-light-2: #eeeeee;
+    --color-text-light-3: #bbbbbb;
+    --color-section-border: #dddddd;
+    --color-input-bg: #efefef;
+    --color-input-border: #888888;
+    --color-input-placeholder: #888888;
+    --color-input-focus: #ff6b00;
+}
+
 /* Reset and Base Styles */
 * {
     margin: 0;
@@ -8,12 +35,16 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.1;
-    color: #888;
+    color: var(--color-text);
 }
 
 a {
     text-decoration: none;
-    color: #66aacc;
+    color: var(--color-link);
+}
+
+a:hover {
+    color: var(--color-link-hover);
 }
 
 img {
@@ -26,7 +57,7 @@ img {
 h1, h2, h3, h4, h5 {
     margin-bottom: 1rem;
     line-height: 1.1;
-    color: #888;
+    color: var(--color-heading);
 }
 
 h1 {
@@ -61,6 +92,7 @@ header {
     z-index: 1000;
     transition: background-color 0.3s ease;
     padding: 0 5%;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 header.scrolled {
@@ -79,7 +111,7 @@ header.scrolled {
 .nav a {
     font-weight: 500;
     font-size: 1rem;
-    color: #ddd;
+    color: var(--color-nav-link);
     position: relative;
     transition: color 0.3s ease;
 }
@@ -91,7 +123,7 @@ header.scrolled {
     height: 2px;
     bottom: -5px;
     left: 0;
-    background-color: #ff6b00;
+    background-color: var(--color-nav-link-border);
     transition: width 0.3s ease;
 }
 
@@ -100,7 +132,7 @@ header.scrolled {
 }
 
 header.scrolled .nav a {
-    color: #888;
+    color: var(--color-text);
 }
 
 /* Cover Section */
@@ -139,7 +171,7 @@ header.scrolled .nav a {
 }
 
 .cover-title {
-    color: white;
+    color: var(--color-text-light);
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
@@ -147,6 +179,14 @@ header.scrolled .nav a {
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 8px;
     backdrop-filter: blur(5px);
+}
+
+.cover-title h1,
+.cover-title h2,
+.cover-title h3,
+.cover-title h4,
+.cover-title h5 {
+    color: var(--color-text-light-2);
 }
 
 .cover-title-text {
@@ -166,19 +206,20 @@ header.scrolled .nav a {
 .button {
     display: inline-block;
     padding: 0.8rem 2rem;
-    background-color: #ff6b00;
-    color: white;
+    background-color: var(--color-button-bg);
+    color: var(--color-button-text);
     font-weight: 600;
     border-radius: 4px;
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: all 0.3s ease;
-    border: 2px solid #ff6b00;
+    border: 2px solid var(--color-button-border);
 }
 
 .button:hover {
-    background-color: transparent;
-    color: white;
+    background-color: var(--color-button-bg-hover);
+    color: var(--color-button-text-hover);
+    border-color: var(--color-button-border-hover);
 }
 
 /* Main Content Styles */
@@ -188,10 +229,15 @@ header.scrolled .nav a {
 
 .white-box, .gray-box {
     padding: 5rem 0;
+    border-bottom: 1px solid var(--color-section-border);
+}
+
+.white-box {
+    background-color: var(--color-section-1-bg);
 }
 
 .gray-box {
-    background-color: #dadada;
+    background-color: var(--color-section-2-bg);
 }
 
 .site-container {
@@ -209,14 +255,8 @@ header.scrolled .nav a {
 }
 
 .content-column a {
-    /*color: #2288cc;*/
     font-weight: 500;
     transition: color 0.3s ease;
-}
-
-.content-column a:hover {
-    color: #d45a00;
-    text-decoration: underline;
 }
 
 .content {
@@ -229,13 +269,13 @@ header.scrolled .nav a {
 
 /* Footer Styles */
 .site-footer {
-    background-color: #222;
-    color: #fff;
+    background-color: var(--color-footer-bg);
+    color: var(--color-text-light-2);
     padding: 4rem 0 2rem;
 }
 
 .site-footer a {
-    color: #0066cc;
+    color: var(--color-link-footer);
 }
 
 .footer-section {
@@ -244,7 +284,7 @@ header.scrolled .nav a {
 }
 
 .footer-heading {
-    color: #fff;
+    color: var(--color-text-light);
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
 }
@@ -277,7 +317,7 @@ header.scrolled .nav a {
 }
 
 .section-heading {
-    color: #ff6b00;
+    color: var(--color-text-light-3);
     margin-bottom: 1.2rem;
     font-size: 1.2rem;
     text-transform: uppercase;
@@ -310,14 +350,8 @@ header.scrolled .nav a {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.footer-credit a {
-    color: rgba(255, 255, 255, 0.8);
-    transition: color 0.3s ease;
-}
-
-.footer-credit a:hover {
-    color: #ff6b00;
-}
+.footer-credit a {}
+.footer-credit a:hover {}
 
 address {
     margin-bottom: 1rem;
@@ -350,17 +384,22 @@ label {
 
 input, textarea {
     padding: 0.8rem;
-    border: 1px solid #888888;
-    background-color: #cccccc;
+    border: 1px solid var(--color-input-border);
+    background-color: var(--color-input-bg);
     border-radius: 5px;
-    color: #888888;
+    color: var(--color-footer-bg);
     font-family: inherit;
     transition: border-color 0.3s ease;
 }
 
+input::placeholder, textarea::placeholder {
+    color: var(--color-input-placeholder);
+    font-style: italic;
+}
+
 input:focus, textarea:focus {
     outline: none;
-    border-color: #ff6b00;
+    border-color: var(--color-input-focus);
 }
 
 fieldset {
@@ -382,21 +421,21 @@ legend {
 
 .btn {
     padding: 0.8rem 2rem;
-    background-color: #ff6b00;
-    color: white;
+    background-color: var(--color-button-bg);
+    color: var(--color-button-text);
     font-weight: 600;
     border-radius: 4px;
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: all 0.3s ease;
-    border: 2px solid #ff6b00;
+    border: 2px solid var(--color-button-border);
     cursor: pointer;
     align-self: flex-start;
 }
 
 .btn:hover {
-    background-color: transparent;
-    color: white;
+    background-color: var(--color-button-bg-hover);
+    color: var(--color-button-text-hover);
 }
 
 .submit {
