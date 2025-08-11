@@ -9,7 +9,7 @@ require __DIR__ . '/header.php';
             <div class="cover-title">
                 <h2 class="cover-title-text">PRECAST CONCRETE</h2>
                 <h4 class="cover-title-text-2">QUALITY. IN-STOCK. PRICED RIGHT.</h4>
-                <a href="#content" class="button">See More</a>
+                <a href="#content" class="btn">See More</a>
             </div>
         </div>
         <img src="<?php

@@ -487,17 +487,13 @@ legend {
     align-self: flex-start;
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus {
     background-color: var(--color-button-bg-hover);
     color: var(--color-button-text-hover);
-}
-
-.submit {
-    background: url('../img/submit-button.png') no-repeat center;
-    width: 146px;
-    height: 40px;
-    background-size: cover;
-    border: none;
+    border-color: var(--color-button-border-hover);
+    outline: 3px solid var(--color-input-focus);
+    outline-offset: 2px;
 }
 
 /* Responsive Styles */
