@@ -4,24 +4,24 @@ set_page_title('Precast Concrete Products Supplier - ZZL Company');
 require __DIR__ . '/header.php';
 ?>
 
-    <div class="home-cover">
+    <section class="home-cover" role="region" aria-label="Home Cover">
         <div class="site-container">
             <div class="cover-title">
-                <h2 class="cover-title-text">PRECAST CONCRETE</h2>
-                <h4 class="cover-title-text-2">QUALITY. IN-STOCK. PRICED RIGHT.</h4>
-                <a href="#content" class="btn">See More</a>
+                <p class="cover-title-text">PRECAST CONCRETE</p>
+                <p class="cover-title-text-2">QUALITY. IN-STOCK. PRICED RIGHT.</p>
+                <a href="#main-content" class="btn">See More</a>
             </div>
         </div>
         <img src="<?php
         echo SITE_URL; ?>/assets/img/cover.png" alt="Cover">
-    </div>
+    </section>
 
-    <div class="main-content" id="content">
-        <div class="white-box">
+    <main id="main-content" class="main-content" role="main">
+        <section class="white-box">
             <div class="site-container">
                 <div class="content-column">
-                    <h2>Quality Precast Concrete Products Supplier Since 1963</h2>
-                    <h4>Why Choose Our Company?</h4>
+                    <h1>Quality Precast Concrete Products Supplier Since 1963</h1>
+                    <h2>Why Choose Our Company?</h2>
                     <p>ZZL pioneered the manufacture of quality precast concrete products in New Hampshire, and has
                         grown since 1963 to serve residential and commercial clients throughout New
                         Hampshire, Maine and northern Massachusetts.</p>
@@ -35,19 +35,21 @@ require __DIR__ . '/header.php';
                 </div>
                 <div class="content-column text-center">
                     <img src="<?php
-                    echo SITE_URL; ?>/assets/img/highlights-01.jpg" width="600" height="300" alt="highlights-01">
+                    echo SITE_URL; ?>/assets/img/highlights-01.jpg" width="600" height="300"
+                         alt="Close-up of a finished precast concrete step">
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="gray-box">
+        <section class="gray-box">
             <div class="site-container">
                 <div class="content-column text-center">
                     <img src="<?php
-                    echo SITE_URL; ?>/assets/img/highlights-02.jpg" width="600" height="600">
+                    echo SITE_URL; ?>/assets/img/highlights-02.jpg" width="600" height="600"
+                         alt="Workers installing precast wall sections on site">
                 </div>
                 <div class="content-column">
-                    <h3>Helpful Precast Concrete Products Information and Articles</h3>
+                    <h2>Helpful Precast Concrete Products Information and Articles</h2>
                     <ul>
                         <li><a href="<?php
                             echo SITE_URL; ?>/services" title="Small Lot Septic Systems">Small Lot Septic Systems</a>:
@@ -82,12 +84,12 @@ require __DIR__ . '/header.php';
                         challenges!</p>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="white-box">
+        <section class="white-box">
             <div class="site-container">
                 <div class="content-column">
-                    <h3>Get Your Project Done Quickly &amp; Efficiently with Precast Concrete</h3>
+                    <h2>Get Your Project Done Quickly &amp; Efficiently with Precast Concrete</h2>
                     <p>Our products arrive at the job site ready to install, which can save weeks on your project
                         timeline. Precast reduces the need for skilled labor on site, decreases the site
                         footprint, reduces construction waste and cuts down on site noise. There is no need to order raw
@@ -97,15 +99,16 @@ require __DIR__ . '/header.php';
                 </div>
                 <div class="content-column text-center">
                     <img src="<?php
-                    echo SITE_URL; ?>/assets/img/highlights-03.jpg" width="600" height="500">
+                    echo SITE_URL; ?>/assets/img/highlights-03.jpg" width="600" height="500"
+                         alt="Precast septic tanks ready for delivery">
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="gray-box">
+        <section class="gray-box">
             <div class="site-container">
                 <div class="content">
-                    <h3>Why Use Precast Concrete?</h3>
+                    <h2>Why Use Precast Concrete?</h2>
                     <ul>
                         <li>It is STRONG and increases in strength over time, unlike other materials that can
                             deteriorate
@@ -130,14 +133,14 @@ require __DIR__ . '/header.php';
                             does not typically require special equipment
                         </li>
                     </ul>
-                    <p><strong><a href="<?php
-                            echo SITE_URL; ?>/contact">Contact us</a></strong> to discuss your precast concrete product
+                    <p><a href="<?php
+                        echo SITE_URL; ?>/contact">Contact us</a> to discuss your precast concrete product
                         needs, and let us support you with the most cost-effective way
                         to achieve your goals within your schedule and budget.</p>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
 
 <?php
 require __DIR__ . '/footer.php';

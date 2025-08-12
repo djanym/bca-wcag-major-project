@@ -14,8 +14,8 @@
 
             <div class="footer-column">
                 <h3 class="section-heading">Send us a message</h3>
-                    <?php
-                    require __DIR__ . '/form.php'; ?>
+                <?php
+                require __DIR__ . '/form.php'; ?>
             </div>
 
             <div class="footer-column">
@@ -23,12 +23,14 @@
                 <ul class="social-links">
                     <li>
                         <a href="https://www.facebook.com/zzl/" title="Facebook">
-                            <img src="<?php echo SITE_URL; ?>/assets/img/facebook.svg">
+                            <img src="<?php
+                            echo SITE_URL; ?>/assets/img/facebook.svg" alt="" aria-hidden="true">
                         </a>
                     </li>
                     <li>
                         <a href="https://www.instagram.com/zzlprecast/" title="Instagram">
-                            <img src="<?php echo SITE_URL; ?>/assets/img/instagram.svg">
+                            <img src="<?php
+                            echo SITE_URL; ?>/assets/img/instagram.svg" alt="" aria-hidden="true">
                         </a>
                     </li>
                 </ul>
